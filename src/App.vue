@@ -1,5 +1,7 @@
 <template>
   <nav>
+    <img alt="ezper logo" src="@/assets/LogoMakr-8D6N1D.png">
+    
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
@@ -13,8 +15,18 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+ 
 }
 
+
+body {
+  background: linear-gradient(270deg, #ec0909, #b609ec, #e0e30a, #0ab3e3);
+  background-size: 800% 800%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;  
+}
 nav {
   padding: 30px;
 }
@@ -25,6 +37,35 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #021f12;
+}
+
+.css-selector {
+    background: linear-gradient(270deg, #ec0909, #b609ec, #e0e30a, #0ab3e3);
+    background-size: 800% 800%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    -o-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
 }
 </style>
