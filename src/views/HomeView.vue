@@ -1,46 +1,25 @@
-<template>
-  <!-- <head> -->
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-  <!-- </head> -->
 
-  <!-- <body> -->
-  <div class="Iam home">
-  
-  <div class="bg">
-    <p>This is</p>
-    <b>
-      <div class="innerIam">
-        ezper<br /> 
-        a website<br />
-        in progress<br />
-        built on vue<br />
-        how I learn<br />
-        how we do it
-        </div>
-    </b>
-  </div>
-  </div>
-  <!-- </body> -->
-<!-- class="home" -->
-  <!-- <div class="home">
-    <img alt="Vue logo" src="../assets/ezper-logo-bull-3-lg.gif">
-    
-    <p>Hello</p>
-  </div> -->
+<template>
+<HelloWorld />
 </template>
 
-<script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
 
-export default {
+
+<script>
+import { defineComponent } from 'vue';
+
+// Components
+import HelloWorld from '../components/HelloWorld.vue';
+
+export default defineComponent({
   name: 'HomeView',
+
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+  },
+});
 </script>
+
 
 
 <style scoped>
@@ -130,3 +109,4 @@ export default {
     80% { top: -200px; }
 }
 </style>
+

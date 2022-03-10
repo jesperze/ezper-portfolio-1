@@ -1,32 +1,141 @@
 <template>
-  <div class="hello">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-  </div>
+  <!-- <v-container>
+    <v-row class="text-center">
+      <v-col cols="12"> -->
+<div class="Iam">
+
+<p>This is</p>
+<b>
+  <div class="innerIam">
+    ezper<br /> 
+    a website<br />
+    in progress<br />
+    built on vue<br />
+    how I learn<br />
+    how we do it
+    </div>
+</b>
+</div>
+<!-- 
+
+<div class="Iam">
+<p>We do</p>
+<b>
+  <div class="innerIam">
+    FrontEnd<br /> 
+    Backend<br />
+    Python<br />
+    Vue<br />
+    That's right
+    </div>
+</b>
+</div> -->
+
+      <!-- </v-col>
+    </v-row> -->
+  <!-- </v-container> -->
 </template>
 
 <script>
+
 export default {
   name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+
+  data: () => ({
+
+  }),
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
+
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+body {
+  background: #2d2d2d;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.Iam {
+  padding: 2em 5em;
+  font: normal 40px/50px Montserrat, sans-serif;
+  color: #999;
 }
-li {
+.Iam p {
+  height: 50px;
+  float: left;
+  margin-right: 0.3em;
+}
+.Iam b {
+  float: left;
+  overflow: hidden;
+  /* position: relative; */
+  height: 50px;
+  top: 40px;
+}
+.Iam .innerIam {
   display: inline-block;
-  margin: 0 10px;
+  color: #e74c3c;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+
+/*animation*/
+-webkit-animation:move 5s;
+   -moz-animation:move 5s;
+    -ms-animation:move 5s;
+     -o-animation:move 5s;
+        animation:move 5s;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+/*animation-delay*/
+-webkit-animation-delay:1s;
+   -moz-animation-delay:1s;
+    -ms-animation-delay:1s;
+     -o-animation-delay:1s;
+        animation-delay:1s;
 }
-a {
-  color: #42b983;
+@keyframes move{
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
+}
+
+@-webkit-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-moz-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-o-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
 }
 </style>
