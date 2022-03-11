@@ -27,7 +27,9 @@
           elevation="4"
           outlined
           shaped
-          class="mt-10">
+          class="mt-10"
+          max-width="400"
+          >
 
               <div class="ma-3 pa-3">
                 <v-img
@@ -43,7 +45,14 @@
                 <p class="mb-3 text-center font-weight-medium">
                   14 kr per kvartal
                 </p>
-                <v-btn>
+                <v-btn color="black" block>
+                  <v-icon
+                    large
+                    left
+                    
+                  >
+                    mdi-apple
+                  </v-icon>
                   Pay
                 </v-btn>
                 <p class="ma-1 pa-1 text-center font-weight-light">
@@ -62,7 +71,7 @@
                 <p class="text-left">Land eller region</p>
                 <v-text-field hide-details>Land</v-text-field>
                 <v-text-field>Postnummer</v-text-field>
-                <v-btn>BETALA NU</v-btn>
+                <v-btn color="black" block>BETALA NU</v-btn>
 
               </div>
         </v-card>
