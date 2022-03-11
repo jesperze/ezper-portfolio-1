@@ -1,18 +1,18 @@
 <template>
   <v-app>
-    <v-nav>
-      <img  alt="ezper logo" src="@/assets/LogoMakr-8D6N1D.png">
-      
+    <!-- <v-nav>
+      <img alt="ezper logo" src="@/assets/LogoMakr-8D6N1D.png">
+      <v-spacer></v-spacer>
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </v-nav>
-    <v-app-bar>
+    </v-nav> -->
+    <!-- <v-app-bar>
       <v-app-bar-nav-icon></v-app-bar-nav-icon>
-    </v-app-bar>
-<!--     
-		<v-app-bar app
+    </v-app-bar>  -->
+ 
+		<v-app-bar elevation="0" app
 		 >
-			<v-app-bar-nav-icon></v-app-bar-nav-icon>
+			<v-app-bar-nav-icon ></v-app-bar-nav-icon>
 			<v-toolbar-title>ezper</v-toolbar-title>
 			<v-spacer></v-spacer>
 			<v-btn icon>
@@ -24,9 +24,12 @@
 			<v-btn icon>
 				<v-icon>mdi-dots-vertical</v-icon>
 			</v-btn>
-		</v-app-bar> --> 
+		</v-app-bar>
+
     <v-main>
-      <router-view/>
+      <v-container>
+        <router-view/>
+      </v-container>
     </v-main>
   </v-app>
 </template>
@@ -47,11 +50,27 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
- 
+  text-align: center;  
+  /* color: #2c3e50; */
 }
 
+.v-btn {
+  background-color: transparent;
+}
+.v-app-bar {
+  background-color: transparent;
+}
+
+
+/* Gradient Background*/
+.v-application {
+  background: linear-gradient(270deg, #ec0909, #b609ec, #e0e30a, #0ab3e3);
+  background-size: 800% 800%;
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  -o-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
 
 body {
   background: linear-gradient(270deg, #ec0909, #b609ec, #e0e30a, #0ab3e3);
@@ -59,12 +78,13 @@ body {
   -webkit-animation: AnimationName 30s ease infinite;
   -moz-animation: AnimationName 30s ease infinite;
   -o-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;  
-}
-nav {
-  padding: 30px;
+  animation: AnimationName 30s ease infinite;
 }
 
+/* nav {
+  padding: 30px;
+} */
+/* 
 nav a {
   font-weight: bold;
   color: #2c3e50;
@@ -72,7 +92,7 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #021f12;
-}
+} */
 
 .css-selector {
     background: linear-gradient(270deg, #ec0909, #b609ec, #e0e30a, #0ab3e3);
@@ -102,4 +122,6 @@ nav a.router-link-exact-active {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+
+
 </style>

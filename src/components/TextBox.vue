@@ -8,8 +8,8 @@
 	<v-container>
 		<v-layout text-center wrap>
       <div class="Iam">
-      <p>This is</p>
-      <b>
+      <p>Miljontals företag av alla storlekar – från nystartade verksamheter till globala koncerner – använder Stripes programvara och API:er för att ta emot betalningar, skicka utbetalningar och driva sina företag på webben.</p>
+      <!-- <b>
         <div class="innerIam">
           ezper<br /> 
           a website<br />
@@ -18,7 +18,7 @@
           how I learn<br />
           how we do it
           </div>
-      </b>
+      </b> -->
       </div>
 		</v-layout>
 	</v-container>
@@ -62,11 +62,11 @@ export default {
 
 .Iam {
   padding: 2em 5em;
-  font: normal 40px/50px Montserrat, sans-serif;
+  font: normal 40px/25px Montserrat, sans-serif;
   color: #999;
 }
 .Iam p {
-  height: 50px;
+  height: 25px;
   float: left;
   margin-right: 0.3em;
 }
