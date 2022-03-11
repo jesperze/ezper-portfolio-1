@@ -6,27 +6,24 @@
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </v-nav> -->
-    <!-- <v-app-bar>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-    </v-app-bar>  -->
  
 		<v-app-bar elevation="0" app
 		 >
-			<v-app-bar-nav-icon ></v-app-bar-nav-icon>
-			<v-toolbar-title>ezper</v-toolbar-title>
+      <v-img
+        src="@/assets/LogoMakr-8D6N1D.png"
+        class="pa-4 ma-4"
+        max-height="25"
+        max-width="60"
+        contain
+         ></v-img>
+			<!-- <v-toolbar-title>ezper</v-toolbar-title> -->
 			<v-spacer></v-spacer>
-			<v-btn icon>
-				<v-icon>mdi-magnify</v-icon>
-			</v-btn>
-			<v-btn icon>
-				<v-icon>mdi-heart</v-icon>
-			</v-btn>
-			<v-btn icon>
-				<v-icon>mdi-dots-vertical</v-icon>
-			</v-btn>
+			<!-- <v-app-bar-nav-icon class="pa-4 ma-4"></v-app-bar-nav-icon> -->
+      <v-btn icon><v-icon class="pa-4 ma-4" color="white" >$menu</v-icon></v-btn> 
 		</v-app-bar>
-
     <v-main>
+      <canvas id="gradient-canvas" class="v-application1 canvas"></canvas>
+
       <v-container>
         <router-view/>
       </v-container>
@@ -61,17 +58,45 @@ export default {
   background-color: transparent;
 }
 
+.canvas {
+   position: fixed;
+   left: 0;
+   top: 0;
+   z-index: -1;
+   width: 100%;
+   height: 100%;
+}
 
-/* Gradient Background*/
-.v-application {
-  background: linear-gradient(270deg, #ec0909, #b609ec, #e0e30a, #0ab3e3);
-  background-size: 800% 800%;
+/* 
+
+Gradient Background
+176deg,
+270deg
+, #e0e30a, #0ab3e3
+
+ :
+
+  background: linear-gradient(176deg, #ec0909, #b609ec);
+
+  background: linear-gradient(176deg, #22313F 70%, #F4F4F4 calc(70% + 2px));
+
+, #F4F4F4 calc(70% + 2px)
+
+background-size: 800% 800%;
+*/
+
+.v-application1 {
+  background: linear-gradient(176deg, #ec0909, #b609ec, #e0e30a, #0ab3e3, #F4F4F4 calc(70% + 2px));
+  background-size: 800% 800%;  
   -webkit-animation: AnimationName 30s ease infinite;
   -moz-animation: AnimationName 30s ease infinite;
   -o-animation: AnimationName 30s ease infinite;
   animation: AnimationName 30s ease infinite;
+  
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
 }
-
+/* 
 body {
   background: linear-gradient(270deg, #ec0909, #b609ec, #e0e30a, #0ab3e3);
   background-size: 800% 800%;
@@ -79,21 +104,8 @@ body {
   -moz-animation: AnimationName 30s ease infinite;
   -o-animation: AnimationName 30s ease infinite;
   animation: AnimationName 30s ease infinite;
-}
-
-/* nav {
-  padding: 30px;
 } */
 /* 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #021f12;
-} */
-
 .css-selector {
     background: linear-gradient(270deg, #ec0909, #b609ec, #e0e30a, #0ab3e3);
     background-size: 800% 800%;
@@ -101,7 +113,7 @@ nav a.router-link-exact-active {
     -moz-animation: AnimationName 30s ease infinite;
     -o-animation: AnimationName 30s ease infinite;
     animation: AnimationName 30s ease infinite;
-}
+} */
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}

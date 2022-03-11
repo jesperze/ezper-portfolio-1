@@ -1,45 +1,33 @@
 <template>
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-
-  <!-- <v-container>
-    <v-row class="text-center">
-      <v-col cols="12"> -->
 	<v-container>
-		<v-layout text-center wrap>
-      <div class="Iam">
-      <p>This is</p>
-      <b>
-        <div class="innerIam">
-          ezper<br /> 
-          a website<br />
-          in progress<br />
-          built on vue<br />
-          how I learn<br />
-          how we do it
-          </div>
-      </b>
-      </div>
-		</v-layout>
+    <v-row>
+      <v-col cols="6">
+        <!-- <v-layout wrap> -->
+        <div class="HeroHeaderTitle">
+          Infrastruktur för globala betalningar
+        </div>
+        <!-- </v-layout> -->
+      </v-col>
+      <v-col cols="6">
+        <div class="Iam">
+          <p>This is</p>
+          <b>
+            <div class="innerIam">
+              ezper<br /> 
+              a website<br />
+              in progress<br />
+              built on vue<br />
+              how I learn<br />
+              how we do it
+              </div>
+          </b>
+        </div>
+      </v-col>    
+    </v-row>
+
 	</v-container>
-<!-- 
-
-<div class="Iam">
-<p>We do</p>
-<b>
-  <div class="innerIam">
-    FrontEnd<br /> 
-    Backend<br />
-    Python<br />
-    Vue<br />
-    That's right
-    </div>
-</b>
-</div> -->
-
-      <!-- </v-col>
-    </v-row> -->
-  <!-- </v-container> -->
 </template>
 
 <script>
@@ -56,12 +44,20 @@ export default {
 
 
 <style scoped>
-/* body {
-  background: #2d2d2d;
-} */
 
+.HeroHeaderTitle {
+    /* position: absolute;
+    left: 0;
+    bottom: 0; */
+    z-index: 2;
+    color: #3A3A33;
+    opacity: .9;
+    font: normal 40px/50px Montserrat, Helvetica Neue;
+    font-weight: bold;
+    font-size: 58px;
+}
 .Iam {
-  padding: 2em 5em;
+  padding: 1em 1em;
   font: normal 40px/50px Montserrat, sans-serif;
   color: #999;
 }
@@ -73,7 +69,7 @@ export default {
 .Iam b {
   float: left;
   overflow: hidden;
-  /* position: relative; */
+  position: sticky;
   height: 50px;
   top: 40px;
 }
