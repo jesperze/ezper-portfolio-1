@@ -2,7 +2,7 @@
 <template>
 <!-- <NavBar /> -->
 <HelloWorld />
-<TextBox />
+<!-- <TextBox /> -->
 <!-- <TextBox /> -->
 </template>
 
