@@ -113,9 +113,6 @@
       <v-col align-self="right" color="blue" cols="6">
         <v-img
           class="ml-auto"
-          max-height="345"
-          max-width="385"
-          contain
           src="@/assets/pink_computer_cropped.gif"></v-img>
 
       </v-col>
