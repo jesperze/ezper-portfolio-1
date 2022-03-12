@@ -2,7 +2,8 @@
 <template>
 <!-- <NavBar /> -->
 <HelloWorld />
-<!-- <TextBox /> -->
+<v-divider></v-divider>
+<TextBox />
 <!-- <TextBox /> -->
 </template>
 

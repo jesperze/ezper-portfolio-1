@@ -7,19 +7,20 @@
       <v-col cols="12"> -->
 	<v-container>
 		<v-layout text-center wrap>
-      <div class="Iam">
-      <p>Miljontals företag av alla storlekar – från nystartade verksamheter till globala koncerner – använder Stripes programvara och API:er för att ta emot betalningar, skicka utbetalningar och driva sina företag på webben.</p>
-      <!-- <b>
-        <div class="innerIam">
-          ezper<br /> 
-          a website<br />
-          in progress<br />
-          built on vue<br />
-          how I learn<br />
-          how we do it
-          </div>
-      </b> -->
-      </div>
+   
+        <div class="Iam">
+          <p>This is</p>
+          <b>
+            <div class="innerIam">
+              ezper<br /> 
+              a website<br />
+              in progress<br />
+              built on vue<br />
+              how I learn<br />
+              how we do it
+              </div>
+          </b>
+        </div>
 		</v-layout>
 	</v-container>
 <!-- 
@@ -59,21 +60,20 @@ export default {
 /* body {
   background: #2d2d2d;
 } */
-
 .Iam {
-  padding: 2em 5em;
-  font: normal 40px/25px Montserrat, sans-serif;
+  padding: 1em 1em;
+  font: normal 40px/50px Montserrat, sans-serif;
   color: #999;
 }
 .Iam p {
-  height: 25px;
+  height: 50px;
   float: left;
   margin-right: 0.3em;
 }
 .Iam b {
   float: left;
   overflow: hidden;
-  /* position: relative; */
+  position: sticky;
   height: 50px;
   top: 40px;
 }
