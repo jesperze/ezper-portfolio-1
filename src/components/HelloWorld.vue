@@ -3,7 +3,7 @@
 <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<v-container>
     <v-row>
-      <v-col class="mt-11" cols="6">
+      <v-col class="mt-11" cols="12" sm="6">
         <!-- <v-layout wrap> -->
 
         <div class="HeroHeaderTitle">
@@ -24,7 +24,7 @@
         </v-footer>
         <!-- </v-layout> -->
       </v-col>
-      <v-col cols="6">
+      <v-col cols="12" sm="6">
         <v-card
           elevation="4"
           outlined
@@ -102,10 +102,8 @@
           We also <font color ="purple">help companies beat fraud, send invoices, issue virtual and physical cards, get financing, manage business spend,</font> and much more.
         </p>
       </v-col>
-    </v-row>    
-
+    </v-row>
     <v-row>
-
       <v-col cols="6">
         <v-img src="@/assets/purpe_mobile_security_cropped.gif"></v-img>
       </v-col>
@@ -126,10 +124,8 @@
           src="@/assets/phone_rocker_takeoff.gif
           "></v-img>
       </v-col>
-    </v-row>
-
+    </v-row> 
 	</v-container>
-
 </template>
 
 <script>
