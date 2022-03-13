@@ -7,7 +7,10 @@ push_heroku:
 	git push heroku master
 	git push origin master
 
-
+git_push:
+	git add .
+	git commit -m "make git_push"
+	git push origin master
 
 
 

@@ -30,7 +30,8 @@
           outlined
           shaped
           class="mt-10"
-          max-width="400"
+          max-width="$vuetify.breakpoint.smAndUp ? 400"
+          align-center
           
           >
 
